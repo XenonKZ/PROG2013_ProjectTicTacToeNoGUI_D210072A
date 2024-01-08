@@ -17,7 +17,7 @@ public class Board {
         }
     }
 
-    public void displayBoard() {
+    public void displayBoard() {		//print the board/arena
         System.out.println("-------------");
         for (int i = 0; i < SIZE; i++) {
             System.out.print("| ");
@@ -28,19 +28,19 @@ public class Board {
         }
     }
     
-    public static int getSize() {
+    public static int getSize() {		//get the size of the board
         return SIZE;
     }
 
-    public boolean isCellEmpty(int row, int col) {
+    public boolean isCellEmpty(int row, int col) {			//check the cell if it's empty
         return grid[row][col] == ' ';
     }
 
-    public void markCell(int row, int col, char symbol) {
+    public void markCell(int row, int col, char symbol) {	//replace cell with the player's symbol
         grid[row][col] = symbol;
     }
 
-    public boolean isBoardFull() {
+    public boolean isBoardFull() {							//check if the 3x3 board is full.
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 if (grid[i][j] == ' ') {
@@ -51,7 +51,7 @@ public class Board {
         return true;
     }
 
-    public boolean checkWin(char symbol) {
+    public boolean checkWin(char symbol) {					//checking the win condition of the game
         // Checking rows and columns
         for (int i = 0; i < SIZE; i++) {
             if (grid[i][0] == symbol && grid[i][1] == symbol && grid[i][2] == symbol) {

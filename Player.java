@@ -9,11 +9,11 @@ public class Player {
         this.symbol = symbol;
     }
 
-    public String getName() {
+    public String getName() {		//used to get username
         return name;
     }
 
-    public char getSymbol() {
+    public char getSymbol() {		//used to get symbol
         return symbol;
     }
 }
