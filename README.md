@@ -11,4 +11,5 @@ It is used for the logic of the game and it is also where the game is ran.
 
 The java project is being run on eclipse ide.
 The following image is an image of the code running when facing an error
+
 ![image](https://github.com/XenonKZ/PROG2013_ProjectTicTacToeNoGUI_D210072A/assets/37468434/4cfacf9e-bc0c-4fb5-bb2e-01ac557c60e4)
